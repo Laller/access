@@ -1,11 +1,41 @@
+a {
+	outline-style: normal !important;
+	outline-color: white !important;
+}
+
 * {
-	background: black !important;
+	background-color: black !important;
 	color: yellow !important;
 }
 
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: yellow;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: yellow;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: yellow;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: yellow;
+}
+
+pre:hover, code:hover, p:hover, span:hover, a:hover, li:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, article:hover, strong:hover {
+	color: orange !important
+}
+
+a:focus {
+	color: orange !important
+}
 #searchInput {
 	width: 100%;
 	font-size: 40px;
+	margin-bottom: 30px;
 }
 
 #searchBar input {

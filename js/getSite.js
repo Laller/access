@@ -5,7 +5,7 @@ $("head").append(scr);
 
 console.log("getSite.js has injected")
 
-var host = "http://woot-lajoskapusi.c9.io:8080/"
+var host = "http://acces-lajoskapusi.c9.io:8080/"
 var proxy = 'https://jsonp.afeld.me/?url=';
 var original = "";
 var url = "";
@@ -24,7 +24,7 @@ if (uri.search() && uri.pathname() == q_path) {
 function addStyle() {
 	var style = document.createElement('style');
 	style.type = 'text/css';
-	style.innerHTML = '* {background: black !important; background-color: black !important; color: yellow !important; text-shadow: none !important;} div {background-color: black !important;}';
+	style.innerHTML = '* {background-color: black !important; color: yellow !important; text-shadow: none !important; box-shadow: none !important;} div {background-color: black !important;}' + 'pre:hover, code:hover, p:hover, span:hover, a:hover, li:hover, h2:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, article:hover, strong:hover {color: orange !important} a:focus{color:orange !important;}';
 	document.getElementsByTagName('head')[0].appendChild(style);
 }
 
@@ -50,25 +50,20 @@ function repair_site_src_href(data, sourceUrl) {
 
 function renderPage(HTMLstring) {
 	document.open(q_path,'_self',false);
-	document.write(HTMLstring);;
+	document.write(HTMLstring);
 	document.close();
 	addStyle();
-	TabFocusReader();
-	MouseOverReader();
 }
 
 function getSite(original) {
-	if (validateURL(original)) {
+if (validateURL(original)) {
 		url = proxy + original;
 		$.get(url, function(data) {
-	
-	var urig = new URI(original);
-	var protocol = urig.protocol() + "://";
-	//var subdom = urig.subdomain(); + ".";
-	var hn = urig.hostname();
-	console.log("heaaaaaaaaaaaaaaaaaaaaay", protocol + hn)	
-	sourceUrl = protocol + hn;
-
+			var urig = new URI(original);
+			var protocol = urig.protocol() + "://";
+			//var subdom = urig.subdomain(); + ".";
+			var hn = urig.hostname();
+			sourceUrl = protocol + hn;
 			r = repair_site_src_href(data, sourceUrl)
 			if (r["res"] != undefined) {
 				renderPage(r["res"]);

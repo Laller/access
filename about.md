@@ -4,9 +4,18 @@ title: Az oldalrol
 permalink: /az-oldalrol/
 ---
 
-Az oldallal az AKADALYMENTESITES fontossagara szeretnem felhivni kozigazgatasi szervek - uzleti - magan szajtok uzemeltetoinek  a figyelmet. A szabadidom mellett,  nyilt forraskodu es egyeb ingyenes  szoftvereket hasznaltam fel.
+Az oldallal az AKADALYMENTESITES fontossagara szeretnem felhivni kozszolgalati honlapok uzemeltetoinek  a figyelmet.
 
-Ez utobbiert koszonet illeti: [Cloud9][c9],  [Jekyll][jekyll], [ResponsiveVoice][RV]
+Bar az akadalymentesites nem egyetlen alkalmazas feladata lenne es nem is egyszeru minden weboldalt tokeletesen atalakitani, de az AKADALYMENTESITO megkiserli azt.
+
+Az alkalmazas egyenlore kiserleti fazisban van.
+<br />
+<br />
+<br />
+<br />
+Az AKADALYMENTESITO nyilt forraskodu es ingyenes szoftvereket, szolgaltatasokat hasznal.
+
+[Cloud9][c9],  [Jekyll][jekyll], [ResponsiveVoice][RV]
 
 
 

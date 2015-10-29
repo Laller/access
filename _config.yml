@@ -1,10 +1,10 @@
 # Site settings
 title: AKADALYMENTESITO
-email: your-email@domain.com
+email: akadalymentes1@opesun.eu
 description: > # this means to ignore newlines until "baseurl:"
-  Az oldal mas oldalakat jelenit meg, akadalymentesitve. Kivancsi ra, hogy az On oldalanak hogyan kellene kinezni?
+ Az AKADALYMENTESITO weboldalakat alakit at vizualisan korlatozott felhasznalok szamara. Az AKADALYMENTESITO fejlesztes alatt all.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://laller.github.io/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  laller
 
